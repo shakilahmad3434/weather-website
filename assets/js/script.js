@@ -245,7 +245,7 @@ const forecastApi = async (city_input) => {
         const neighborsCodes = data[0]?.borders;
 
         if (!neighborsCodes) {
-          console.log(`No neighboring countries found for ${countryName}.`);
+          // console.log(`No neighboring countries found for ${countryName}.`);
           return [];
         }
 
@@ -304,7 +304,7 @@ const forecastApi = async (city_input) => {
     // Call the function to render neighboring countries
     createCountry();
 
-    console.log(data);
+    // console.log(data);
   } catch (error) {
     // alert(`City is Wrong: ${city} \n please write a right city name`);
   }
@@ -334,7 +334,7 @@ const addNewCountry = async () => {
 
       // Check if the returned JSON contains valid data
       if (addNewCountryData && addNewCountryData.location) {
-        console.log(addNewCountryData);
+        // console.log(addNewCountryData);
         // Update the UI with the fetched data
         parentCountry.innerHTML += `
                     <div class="country_item">
@@ -364,7 +364,7 @@ const cityHandle = (e) => {
   e.preventDefault();
   const cityInput = e.target.querySelector('input[name="city"]').value;
   forecastApi(cityInput.trim());
-  console.log(cityInput);
+  // console.log(cityInput);
   e.target.querySelector('input[name="city"]').value = "";
 };
 
