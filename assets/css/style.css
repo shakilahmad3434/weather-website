@@ -413,22 +413,10 @@ div.weather_highlights {
   padding: 0.4rem;
 }
 
-.forecast_tabs-button button {
-  border: none;
-  outline: none;
-  border-radius: 0.5rem;
-  padding: 0.6rem 1rem;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-  background-color: #2a3335;
-  color: #fff;
-  font-size: 1.15rem;
-  cursor: pointer;
-}
-
 .today_forecast-hour {
   margin-top: 1.5rem;
   overflow-y: scroll;
-  height: calc(100% - 15%);
+  height: 80%;
   display: block;
 }
 
@@ -461,7 +449,7 @@ div.weather_highlights {
 
 .forecast_item-weather {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 1rem;
   border-right: 2px solid #525b44;
