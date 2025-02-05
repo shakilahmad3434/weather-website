@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=humidity_percentage"
+    />
+    <link rel="stylesheet" href="assets/css/responsive.css">
+  </head>
+  <body>
+    <!-- starting a header bar with menu and logo -->
+    <header>
+      <div class="header_container">
+        <div class="header_logo">
+          <a href="#"
+            ><img
+              src="assets/images/logo.png"
+              alt="this is a main weather forecast logo"
+          /></a>
+        </div>
+        <form class="header_search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="city_name"
+            name="city"
+            placeholder="search your city"
+            required
+          />
+        </form>
+        <div class="header_menu">
+          <span class="header_menu-location"
+            ><i class="fa-solid fa-location-dot"></i>
+            <strong class="city_location">Bengaluru</strong></span
+          >
+          <span class="header_date-time"
+            ><strong class="today_date">27</strong>
+            <strong class="today_month">Nov</strong>,
+            <strong class="today_week">Wednesday</strong></span
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- start main section coding and main content -->
+    <main>
+      <!-- start 2 by 1 grid for weather section coding -->
+      <section class="weather_section">
+        <!-- start today highlights weather details -->
+        <div class="weather_highlights">
+          <h2 class="today-highlights">Today Highlights</h2>
+          <div class="weather_top">
+            <div class="weather_left">
+              <div class="weather_heading">
+                <span>Air Quality Index</span>
+                <span class="weather_condition">Fair</span>
+              </div>
+              <div class="weather_air-quality">
+                <div class="weather_wind">
+                  <i class="fa-solid fa-wind"></i>
+                </div>
+                <div class="weather_pm">
+                  <span>PM<sub>2.5</sub></span>
+                  <p class="air_quality-pm">11.1</p>
+                </div>
+                <div class="weather_so">
+                  <span>SO<sub>2</sub></span>
+                  <p class="air_quality-so2">1.15</p>
+                </div>
+                <div class="weather_no">
+                  <span>No<sub>2</sub></span>
+                  <p class="air_quality-no2">1.14</p>
+                </div>
+                <div class="weather_o3">
+                  <span>O<sub>3</sub></span>
+                  <p class="air_quality-o3">87.3</p>
+                </div>
+              </div>
+            </div>
+            <div class="weather_right">
+              <div class="weather_rise-set">
+                <span>Sunrise & Sunset</span>
+              </div>
+              <div class="weather_sunrise-sunset">
+                <div class="weather_sunrise">
+                  <div class="weather_sunrise-icon">
+                    <i class="fa-solid fa-sun"></i>
+                  </div>
+                  <div class="weather_sunrise-desc">
+                    <span>Sunrise</span>
+                    <p class="sunrise">6:18 AM</p>
+                  </div>
+                </div>
+                <div class="weather_sunset">
+                  <div class="weather_sunset-icon">
+                    <i class="fa-solid fa-moon"></i>
+                  </div>
+                  <div class="weather_sunset-desc">
+                    <span>Sunset</span>
+                    <p class="sunset">7:40 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="weather_bottom">
+            <div class="weather_humidity">
+              <p>Humidity</p>
+              <div class="weather_humidity-icons">
+                <span class="material-symbols-outlined"
+                  >humidity_percentage</span
+                >
+                <span><strong class="humidity">83</strong>%</span>
+              </div>
+            </div>
+            <div class="weather_pressure">
+              <p>Pressure</p>
+              <div class="weather_pressure-icons">
+                <i class="fa-solid fa-wind"></i>
+                <span><strong class="pressure">1009</strong> hba</span>
+              </div>
+            </div>
+            <div class="weather_visibility">
+              <p>Visibility</p>
+              <div class="weather_visibility-icons">
+                <i class="fa-solid fa-eye"></i>
+                <span><strong class="visibility">10</strong> KM</span>
+              </div>
+            </div>
+            <div class="weather_feels">
+              <p>Feels Like</p>
+              <div class="weather_feel-icons">
+                <i class="fa-solid fa-temperature-high"></i>
+                <span><strong class="feels-like">23</strong>°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="country_container">
+            <div class="country_add">
+              <i class="fa-solid fa-plus"></i>
+              <h2>World<br />forecast</h2>
+              <p>Add the cities you are interested in</p>
+            </div>
+            <div class="country_showing">
+              <!-- country item 1 -->
+              <!-- <div class="country_item">
+					<div class="country_item-icon"><img src="http://cdn.weatherapi.com/weather/64x64/day/113.png"></div>
+					<div>
+						<p>Delhi</p>
+						<span>India</span>
+					</div>
+					<div><h2>23°<span>/15°</span></h2></div>
+				</div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- start weekly forecast coding -->
+        <div class="forecast_container">
+          <h2>Forecast</h2>
+          <div class="forecast_tabs">
+            <div class="forecast_tabs-link">
+              <button class="today_btn active">Today</button>
+              <button class="tomorrow_btn">Tomorrow</button>
+              <button class="sevendays_btn">7 Days</button>
+              <button class="fifteendays_btn">15 Days</button>
+            </div>
+            <div class="forecast_tabs-button">
+              <button>See Monthly Cast</button>
+            </div>
+          </div>
+          <div class="today_forecast-hour">
+            <!-- display today forecast by js -->
+          </div>
+          <div class="tomorrow_forecast-hour">
+            <!-- display tomorrow forecast by js -->
+            
+          </div>
+          <div class="sevendays_forecast">
+            <!-- display 7 days forecast by js -->
+            
+
+          </div>
+          <div class="fifteendays_forecast">
+            <!-- display 15 days forecast by js -->
+          
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script type="text/javascript" src="assetss/js/script.js"></script>
+  </body>
+</html>
